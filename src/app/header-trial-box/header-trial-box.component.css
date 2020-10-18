@@ -39,7 +39,7 @@
     margin: 0%;
     padding: 0%;
 }
-.public-figure-date{
+.public-figure-moreinfo{
     margin: 0px 0px 5% 0px;
     color: var(--foreground-default);
 }
@@ -86,4 +86,7 @@
     align-items: center;
     justify-content: center;
     transform: scaleX(-1);
+}
+.thumb-link {
+    color: var(--foreground-default);
 }
