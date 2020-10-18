@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /* Colors */
+    --foreground-default:#FFFFFF;
+    --foreground-secondary: #41474d;
+    --foreground-tertiary: #797c80;
+    --foreground-quaternary: #08090a;
+    --foreground-light: #41474d;
+
+    --background-default: #ffffff;
+    --background-secondary: #020202;
+    --background-tertiary: #5c7d99;
+    --background-light: #ffffff;
+
+    --primary-default: #00BBB4;
+    --primary-dark: #195867;
+    --primary-light: #b2ffe7;
+
+    --secundary-default: #FFAB42;
+    --secundary-dark: #F75C4E;
+    --secundary-light: #FFD5EF;
+
+    --tertiary-default: #CD70BE;
+    --tertiary-dark: #9C5270;
+    --tertiary-light: #CEB9EB;
+
+    --error-default: #ef3e36;
+    --error-dark: #800600;
+    --error-light: #ffcecc;
+
+    /* Shadows */
+    --background-tertiary-shadow: 0 1px 3px 0 rgba(92, 125, 153, 0.5);
+}
+
+body {
+    background: var(--background-default);
+}
+
+.outline-button {
+    border: 1px solid;
+    background-color: transparent;
+    padding: 8px 15px;
+    font-size: 12px;
+    cursor: pointer;
+    border-color: var(--foreground-default);
+    color: var(--foreground-default);
+}
+.filled-button {
+    border: none;
+    color: var(--foreground-default);
+    padding: 8px 15px; 
+    cursor: pointer; 
+}
+.primary {
+    background-color: var(--primary-default);
+}
+.secundary {
+    background-color: var(--secundary-default);
+}
