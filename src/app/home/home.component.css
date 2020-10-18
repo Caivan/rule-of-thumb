@@ -1,0 +1,17 @@
+.pubfigures-container {
+    display: grid;
+    margin: 5%;
+    grid-template-columns: 50% 50%;
+}
+.pubfigure-item {
+    border: 1px solid red;
+    grid-column: span 1;
+    margin: 10%;
+}
+
+/** Tablet */
+@media screen and (max-width: 768px){ 
+    .pubfigures-container {
+        grid-template-columns: 100%;
+    }
+} 

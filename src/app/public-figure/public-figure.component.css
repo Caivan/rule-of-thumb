@@ -1,8 +1,8 @@
 .public-figure {
-    width: 490px;
+    width: 100%;
     position: relative;
     z-index: 1;
-    height: 550px;
+    height: 500px;
 }
 .public-figure-image {
     width: 100%;

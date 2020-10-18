@@ -5,16 +5,35 @@ export class PublicFigure {
     qtyLikes: number;
     qtyDislikes: number;
     imageUrl: string;
+    category: string;
 
-    likesPercentage (): number{
-        return this.calculatePercentage (this.qtyLikes);
+    constructor(
+        name: string,
+        publicationDate: Date,
+        description: string,
+        qtyLikes: number,
+        qtyDislikes: number,
+        imageUrl: string,
+        category: string
+    ) {
+        this.name = name;
+        this.publicationDate = publicationDate;
+        this.description = description;
+        this.qtyLikes = qtyLikes;
+        this.qtyDislikes = qtyDislikes;
+        this.imageUrl = imageUrl;
+        this.category = category;
     }
 
-    dislikesPercentage (): number {
-        return this.calculatePercentage (this.qtyDislikes);
-    }   
+    likesPercentage(): number {
+        return this.calculatePercentage(this.qtyLikes);
+    }
 
-    private calculatePercentage (qtyBase): number{
-        return qtyBase * 100 / (this.qtyLikes + this.qtyDislikes);
+    dislikesPercentage(): number {
+        return this.calculatePercentage(this.qtyDislikes);
+    }
+
+    private calculatePercentage(qtyBase): number {
+        return (qtyBase * 100) / (this.qtyLikes + this.qtyDislikes);
     }
 }
