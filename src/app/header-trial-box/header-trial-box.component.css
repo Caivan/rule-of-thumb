@@ -1,0 +1,89 @@
+.trial-box {
+    margin-left: 10%;
+    width: 40%;
+    position: relative;
+    z-index: 1;
+    height: 70%;
+    padding-top: 10px
+}
+.overlay-image {
+    position: absolute; 
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    background-color: rgba(94, 91, 91, 0.7);
+    z-index: -1;
+}
+.detail-container {
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
+    margin: 5% 8% 2% 5%;
+    /* 491 552 */
+}
+.like-status {
+    position: absolute;
+    color: white;
+    left: 0;
+    margin-right: 5px;
+    padding: 1px 5px;
+    background-color: var(--primary-default);
+}
+.public-figure-name {
+    color: var(--foreground-default);
+    font-size: 5vw;
+    margin: 0%;
+    padding: 0%;
+}
+.public-figure-date{
+    margin: 0px 0px 5% 0px;
+    color: var(--foreground-default);
+}
+.public-figure-description{
+    margin: 0px 0px 1em 0px;
+    color: var(--foreground-default);
+    font-size: 1em;
+}
+.public-figure-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 0px 1em 0px;
+}
+.check-vote-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.results-bar {
+    width: 100%;
+    height: 3em;
+    display: flex;
+    position: relative;
+    color: var(--foreground-default);
+    opacity: 0.6;
+    font-size: 1.2em;
+}
+.likes-results-bar {
+    border: 0px;
+    background-color: var(--primary-default);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dislikes-results-bar {
+    border: 0px;
+    background-color: var(--secundary-default);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scaleX(-1);
+}

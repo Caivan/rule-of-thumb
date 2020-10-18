@@ -4,7 +4,6 @@
     grid-template-columns: 50% 50%;
 }
 .pubfigure-item {
-    border: 1px solid red;
     grid-column: span 1;
     margin: 10%;
 }

@@ -39,7 +39,8 @@
     align-items: center;
     padding: 0 10px;
 }
-.container {
+.container-trial-box {
+    border: 1px solid red;
     width: 100%;
     flex: 1;
     margin: 0 auto;
@@ -92,6 +93,7 @@
     }
     .menu-title {
         font-size: x-large;
+        font-weight: bold;
         padding-top: 15px;
         position: relative;
         top: 5px;
