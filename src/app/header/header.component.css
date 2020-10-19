@@ -78,7 +78,7 @@
 .hero-image{
     object-fit: cover;
     width: 100%; 
-    height: 600px;
+    height: inherit;
     position: absolute;
     top: 0;
     z-index: -2;
@@ -96,6 +96,12 @@
     z-index: -1;
 }
 
+@media screen and (max-width: 1440px){
+    .hero {
+        height: 800px;
+        overflow: hidden;
+    }
+}
 /** Tablet */
 @media screen and (max-width: 767px){
     .header {
