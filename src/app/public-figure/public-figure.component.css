@@ -53,7 +53,19 @@
     padding: 1px 5px;
     background-color: var(--primary-default);
 }
+.dislike-status {
+    position: absolute;
+    color: white;
+    left: 0;
+    margin-right: 5px;
+    padding: 1px 5px;
+    background-color: var(--secundary-default);
+}
+.dislike-status i {
+    transform: scaleX(-1);
+}
 .public-figure-name {
+    position: relative;
     color: var(--foreground-default);
     font-size: 5vw;
     margin: 0%;
