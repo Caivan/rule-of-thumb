@@ -13,9 +13,11 @@ export class PublicFigureComponent implements OnInit {
   likesPercentage: number;
   dislikesPercentage: number;
   voteSelected: string;
+  voted: boolean;
 
   constructor() {
-      this.voteSelected = 'like'; 
+      this.voteSelected = 'like';
+      this.voted = false; 
   }
 
   ngOnInit(): void {
@@ -32,6 +34,11 @@ export class PublicFigureComponent implements OnInit {
         this.publicFigure.qtyDislikes += 1;
       }
       this.fillPercentages ();
+      this.voted = true;
+  }
+
+  resetVoting () {
+    this.voted = false;
   }
 
   private fillPercentages() {

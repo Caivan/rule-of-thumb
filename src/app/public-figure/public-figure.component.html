@@ -11,10 +11,14 @@
         <p class="public-figure-date">
           <small> <strong>1 month ago</strong> in {{ publicFigure.category }} </small>
         </p>
-        <p class="public-figure-description">
+
+        <p *ngIf="!voted" class="public-figure-description">
           {{ publicFigure.description }}
         </p>
-        <div class="public-figure-buttons">
+        <p *ngIf="voted" class="public-figure-description">
+          Thanks for voting!
+        </p>
+        <div *ngIf="!voted" class="public-figure-buttons">
           <div class="check-vote-buttons">
             <label>
               <input type="radio" [name]="publicFigure.id" value="like" [(ngModel)]="voteSelected" />
@@ -30,6 +34,9 @@
             </label>
           </div>
           <button class="outline-button" (click)="addVote ()" >Vote now</button>
+        </div>
+        <div *ngIf="voted" class="public-figure-buttons">
+          <button class="outline-button" (click)="resetVoting ()" >Vote again</button>
         </div>
       </div>
       <div class="results-bar">
