@@ -67,6 +67,7 @@
     color: var(--foreground-default);
     opacity: 0.6;
     font-size: 1.2em;
+    z-index: 2;
 }
 .likes-results-bar {
     border: 0px;
@@ -95,6 +96,7 @@
 @media screen and (max-width: 767px){
 	.trial-box {
         width: 80%;
+        top: -25px;
     }
 }
 @media screen and (max-width: 480px){

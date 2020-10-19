@@ -11,7 +11,21 @@
     justify-content: space-around;
     flex-wrap: wrap;
     position: relative;
-    z-index: 1;
+    z-index: 5;
+}
+.burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    left: 5px;
+    top: 5px;
+    color: white;
 }
 .menu {
     height: inherit;
@@ -84,11 +98,32 @@
 
 /** Tablet */
 @media screen and (max-width: 767px){
-	.header-menu {
+    .header {
+        height: 50px;
+    }
+    .burger-button{
+        display: block;
+    }
+    .header-menu {
         display: block;
         height: auto;
         text-align: center;
-        background-color: #1b2127;
+    }
+    .menu {
+        position: fixed;
+        background-color: rgba(15, 15, 15, .9);
+        z-index: 5;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .menu.is-active {
+        left: 0;
     }
     .menu-title {
         font-size: x-large;
@@ -107,7 +142,10 @@
         justify-content: center;
     }
     .hero {
-        height: auto;
+        height: 350px;
         overflow: hidden;
+    }
+    .hero-image{
+        height: inherit;
     }
 }
