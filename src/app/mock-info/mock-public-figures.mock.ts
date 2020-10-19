@@ -1,6 +1,7 @@
 import { IPublicFigure } from '../models/public-figure.model';
 export const CHARACTERS: IPublicFigure[] = [
     {
+        id: 1,
         name: 'Kanye West', 
         publicationDate: new Date(),
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus voluptates magni.",
@@ -10,6 +11,7 @@ export const CHARACTERS: IPublicFigure[] = [
         category: "Entertainment"
     },
     {
+        id: 2,
         name: "Mark Zuckenberg", 
         publicationDate: new Date (),
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus voluptates magni.",
@@ -19,6 +21,7 @@ export const CHARACTERS: IPublicFigure[] = [
         category: 'Business'
     },
     {
+        id: 3,
         name: "Cristina Fernandéz de Kirchner", 
         publicationDate: new Date (),
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus voluptates magni.",
@@ -28,6 +31,7 @@ export const CHARACTERS: IPublicFigure[] = [
         category: 'Politics'
     },
     {
+        id: 4,
         name: "Malala Yousafzai", 
         publicationDate: new Date (),
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus voluptates magni.",

@@ -1,4 +1,5 @@
 export interface IPublicFigure {
+    id: number;
     name: string;
     publicationDate: Date;
     description: string;
@@ -8,6 +9,7 @@ export interface IPublicFigure {
     category: string;
 }
 export class PublicFigure implements IPublicFigure {
+    id: number;
     name: string;
     publicationDate: Date;
     description: string;

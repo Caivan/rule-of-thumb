@@ -1,56 +1,56 @@
-<article class="public-figure">
-  <div class="public-figure-details">
-    <div class="detail-container">
-      <div>
-        <div class="like-status">
-          <i class="fas fa-thumbs-up fa-sm"></i>
+  <article class="public-figure">
+    <div class="public-figure-details">
+      <div class="detail-container">
+        <div>
+          <div class="like-status">
+            <i class="fas fa-thumbs-up fa-sm"></i>
+          </div>
+          <h3 class="public-figure-name">{{ publicFigure.name }}</h3>
         </div>
-        <h3 class="public-figure-name">{{ publicFigure.name }}</h3>
-      </div>
-
-      <p class="public-figure-date">
-        <small> <strong>1 month ago</strong> in {{ publicFigure.category }} </small>
-      </p>
-      <p class="public-figure-description">
-        {{ publicFigure.description }}
-      </p>
-      <div class="public-figure-buttons">
-        <div class="check-vote-buttons">
-          <label>
-            <input type="radio" name="vote" value="like" checked />
-            <div class="like-radio">
-              <i class="fas fa-thumbs-up"></i>
-            </div>
-          </label>
-          <label>
-            <input type="radio" name="vote" value="dislike" />
-            <div class="dislike-radio">
-              <i class="fas fa-thumbs-down"></i>
-            </div>
-          </label>
-        </div>
-        <button class="outline-button">Vote now</button>
-      </div>
-    </div>
-    <div class="results-bar">
-      <div class="likes-results-bar">
-        <p class="bar-vote-results">
-          <i class="fas fa-thumbs-up"></i>
-          64%
+  
+        <p class="public-figure-date">
+          <small> <strong>1 month ago</strong> in {{ publicFigure.category }} </small>
         </p>
+        <p class="public-figure-description">
+          {{ publicFigure.description }}
+        </p>
+        <div class="public-figure-buttons">
+          <div class="check-vote-buttons">
+            <label>
+              <input type="radio" [name]="publicFigure.id" value="like" [(ngModel)]="voteSelected" />
+              <div class="like-radio">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+            </label>
+            <label>
+              <input type="radio" [name]="publicFigure.id" value="dislike" [(ngModel)]="voteSelected"/>
+              <div class="dislike-radio">
+                <i class="fas fa-thumbs-down"></i>
+              </div>
+            </label>
+          </div>
+          <button class="outline-button" (click)="addVote ()" >Vote now</button>
+        </div>
       </div>
-      <div class="dislikes-results-bar">
-        <p class="bar-vote-results bar-vote-results-dislike">
-          36%
+      <div class="results-bar">
+        <div class="likes-results-bar" [style.width.%]="likesPercentage">
+          <p class="bar-vote-results" >
+            <i class="fas fa-thumbs-up"></i>
+            {{ likesPercentage }} %
+          </p>
+        </div>
+        <div class="dislikes-results-bar" [style.width.%]="dislikesPercentage">
+          <p class="bar-vote-results bar-vote-results-dislike">
+            {{ dislikesPercentage }} %
+          </p>
           <i class="fas fa-thumbs-down"></i>
-        </p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="overlay-image"></div>
-  <img
-    class="public-figure-image"
-    [src]="publicFigure.imageUrl"
-    alt="Image of the character"
-  />
-</article>
+    <div class="overlay-image"></div>
+    <img
+      class="public-figure-image"
+      [src]="publicFigure.imageUrl"
+      alt="Image of the character"
+    />
+  </article> 
