@@ -7,6 +7,9 @@ export interface IPublicFigure {
     qtyDislikes: number;
     imageUrl: string;
     category: string;
+    wikiUrl: string;
+    votingText: string;
+    heroImageUrl: string;
 }
 export class PublicFigure implements IPublicFigure {
     id: number;
@@ -17,7 +20,10 @@ export class PublicFigure implements IPublicFigure {
     qtyDislikes: number;
     imageUrl: string;
     category: string;
-
+    wikiUrl: string;
+    votingText: string;
+    heroImageUrl: string;
+    
     constructor(
         name: string,
         publicationDate: Date,

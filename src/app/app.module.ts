@@ -14,6 +14,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { PublicFigureComponent } from './public-figure/public-figure.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeaderTrialBoxComponent } from './header-trial-box/header-trial-box.component';
+import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { HeaderTrialBoxComponent } from './header-trial-box/header-trial-box.com
     SignUpComponent,
     PublicFigureComponent,
     PageNotFoundComponent,
-    HeaderTrialBoxComponent
+    HeaderTrialBoxComponent,
+    TermsConditionsComponent,
+    PrivacyPolicyComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
