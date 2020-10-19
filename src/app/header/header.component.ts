@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  imageSrc: string;
+
+  constructor() { 
+    // Default image
+    this.imageSrc = '/assets/images/pope-francis.jpg';
+  }
 
   ngOnInit(): void {
+  }
+
+  heroImageChange (image: string) {
+    if (image){
+      this.imageSrc = image;
+    } 
   }
 
 }

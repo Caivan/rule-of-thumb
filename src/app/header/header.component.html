@@ -30,10 +30,10 @@
 </header>
 <section class="hero">
     <div class="container-trial-box">
-        <rothumb-header-trial-box></rothumb-header-trial-box>
+        <rothumb-header-trial-box (emmitImageChange)="heroImageChange($event)" ></rothumb-header-trial-box>
     </div>
     <div class="overlay-hero">
     </div>
-    <img class="hero-image" src="/assets/images/pope-francis.jpg" alt="hero image of the site">
+    <img class="hero-image" [src]="imageSrc" alt="hero image of the site">
     
 </section>

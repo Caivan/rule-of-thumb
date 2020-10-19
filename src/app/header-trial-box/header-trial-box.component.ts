@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IPublicFigure } from '../models/public-figure.model';
+import { PublicFiguresService } from '../services/public-figures.service';
 
 @Component({
   selector: 'rothumb-header-trial-box',
@@ -7,9 +10,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderTrialBoxComponent implements OnInit {
 
-  constructor() { }
+  @Output()
+  emmitImageChange: EventEmitter<string>;
+  publicFigureHero: IPublicFigure;
+
+  constructor(private publicFiguresService: PublicFiguresService) { 
+    this.emmitImageChange = new EventEmitter<string> ();
+    this.getRandomPublicFigureToShowcase ();
+  }
 
   ngOnInit(): void {
+    
+  }
+
+  getRandomPublicFigureToShowcase () {
+      this.publicFiguresService.getRandomPublicFigure ().subscribe (
+        figureHero => {
+          this.publicFigureHero = figureHero;
+          this.emmitImageChange.emit (this.publicFigureHero.heroImage);
+        }
+      );    
   }
 
 }

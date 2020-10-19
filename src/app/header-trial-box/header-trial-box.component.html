@@ -1,18 +1,16 @@
-<article class="trial-box">
+<article class="trial-box" *ngIf="publicFigureHero">
   <div class="trial-box-details">
     <div class="detail-container">
         <small>What's your opinion on</small>
-        <h3 class="public-figure-name">Pope Francis?</h3>
+        <h3 class="public-figure-name">{{ publicFigureHero.name }}?</h3>
         <p class="public-figure-feature-tetxt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Nostrum corrupti quod repellendus laborum magni. 
-            Eveniet quae officia doloremque! Debitis a tempore, voluptate fuga quod deserunt at.
+            {{ publicFigureHero.votingText }}
         </p>
         <p class="public-figure-moreinfo">
             <i class="fab fa-wikipedia-w fa-xs" aria-hidden="true"></i>
             <small>
-                <a class="thumb-link" href=""> More information</a>
-             </small>
+                <a class="thumb-link" [href]="publicFigureHero.wikiUrl" target="_blank"> More information</a>
+            </small>
         </p>
         <p>What's your verdict?</p>
     </div>

@@ -19,6 +19,12 @@ export class PublicFiguresService {
     );
   }
 
+  getRandomPublicFigure(): Observable<IPublicFigure> {
+    return this.httpClient.get<IPublicFigure>(
+      `${environment.urlApiRulesOfThumb}/${publicFiguresEndPoint}-random`
+    );
+  }
+
   updatePublicFigureData(publicFigure: IPublicFigure) {
     const updateObject = {
         qtyLikes: publicFigure.qtyLikes,
@@ -34,4 +40,6 @@ export class PublicFiguresService {
         val => { console.log ('val', val)}
       );
   }
+
+
 }
