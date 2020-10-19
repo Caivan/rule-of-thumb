@@ -142,3 +142,23 @@
 .bar-vote-results-dislike i {
     transform: scaleX(-1);
 }
+
+/** Tablet */
+@media screen and (max-width: 767px){
+	.trial-box {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 480px){
+    .public-figure {
+        height: 320px;
+    }
+    .like-status {
+        top: 0;
+    }
+}
+@media screen and (max-width: 380px){
+    .public-figure {
+        height: 260px;
+    }
+}

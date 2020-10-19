@@ -3,7 +3,7 @@
     width: 40%;
     position: relative;
     z-index: 1;
-    height: 70%;
+    height: 80%;
     padding-top: 10px
 }
 .overlay-image {
@@ -89,4 +89,17 @@
 }
 .thumb-link {
     color: var(--foreground-default);
+}
+
+/** Tablet */
+@media screen and (max-width: 767px){
+	.trial-box {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 480px){
+    .trial-box {
+        width: 100%;
+        margin-left: 0;
+    }
 }
