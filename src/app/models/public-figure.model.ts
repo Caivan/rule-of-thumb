@@ -1,4 +1,13 @@
-export class PublicFigure {
+export interface IPublicFigure {
+    name: string;
+    publicationDate: Date;
+    description: string;
+    qtyLikes: number;
+    qtyDislikes: number;
+    imageUrl: string;
+    category: string;
+}
+export class PublicFigure implements IPublicFigure {
     name: string;
     publicationDate: Date;
     description: string;

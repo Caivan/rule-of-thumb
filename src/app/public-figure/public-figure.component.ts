@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IPublicFigure } from '../models/public-figure.model';
 
 @Component({
   selector: 'rothumb-public-figure',
@@ -8,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PublicFigureComponent implements OnInit {
 
   @Input ()
-  publicFigure: any;
+  publicFigure: IPublicFigure;
 
   constructor() { }
 

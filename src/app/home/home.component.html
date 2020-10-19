@@ -4,9 +4,8 @@
         Votes
     </h1>
     <div class="pubfigures-container">
-        <rothumb-public-figure class="pubfigure-item" [publicFigure]="publicFigureTest1" ></rothumb-public-figure>
-        <rothumb-public-figure class="pubfigure-item" [publicFigure]="publicFigureTest2" ></rothumb-public-figure>
-        <rothumb-public-figure class="pubfigure-item" [publicFigure]="publicFigureTest3" ></rothumb-public-figure>
-        <rothumb-public-figure class="pubfigure-item" [publicFigure]="publicFigureTest4" ></rothumb-public-figure>
-    </div>    
+        <div *ngFor="let publicFigure of publicFigures |  async" class="pubfigure-item">
+            <rothumb-public-figure  [publicFigure]="publicFigure" ></rothumb-public-figure>
+        </div>
+    </div>
 </div>

@@ -5,15 +5,14 @@
         <div class="like-status">
           <i class="fas fa-thumbs-up fa-sm"></i>
         </div>
-        <h3 class="public-figure-name">Kanye West</h3>
+        <h3 class="public-figure-name">{{ publicFigure.name }}</h3>
       </div>
 
       <p class="public-figure-date">
-        <small> <strong>1 month ago</strong> in Entertainment </small>
+        <small> <strong>1 month ago</strong> in {{ publicFigure.category }} </small>
       </p>
       <p class="public-figure-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-        ducimus voluptates magni.
+        {{ publicFigure.description }}
       </p>
       <div class="public-figure-buttons">
         <div class="check-vote-buttons">
@@ -51,7 +50,7 @@
   <div class="overlay-image"></div>
   <img
     class="public-figure-image"
-    src="/assets/images/west-cut.jpg"
+    [src]="publicFigure.imageUrl"
     alt="Image of the character"
   />
 </article>
