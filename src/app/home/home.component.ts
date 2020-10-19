@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IPublicFigure, PublicFigure } from '../models/public-figure.model';
+import { IPublicFigure } from '../models/public-figure.model';
 import { PublicFiguresService } from '../services/public-figures.service';
 
 @Component({

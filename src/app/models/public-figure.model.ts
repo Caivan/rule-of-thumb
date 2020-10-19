@@ -1,5 +1,5 @@
 export interface IPublicFigure {
-    id: number;
+    _id: number;
     name: string;
     publicationDate: Date;
     endVotingDate: Date; 

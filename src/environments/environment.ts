@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  urlApiRulesOfThumb: 'https://back-rule-of-thumb.herokuapp.com/public-figure/'
 };
 
 /*

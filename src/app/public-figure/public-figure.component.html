@@ -20,13 +20,13 @@
         <div *ngIf="!voted" class="public-figure-buttons">
           <div class="check-vote-buttons">
             <label>
-              <input type="radio" [name]="publicFigure.id" value="like" [(ngModel)]="voteSelected" />
+              <input type="radio" [name]="publicFigure._id" value="like" [(ngModel)]="voteSelected" />
               <div class="like-radio">
                 <i class="fas fa-thumbs-up"></i>
               </div>
             </label>
             <label>
-              <input type="radio" [name]="publicFigure.id" value="dislike" [(ngModel)]="voteSelected"/>
+              <input type="radio" [name]="publicFigure._id" value="dislike" [(ngModel)]="voteSelected"/>
               <div class="dislike-radio">
                 <i class="fas fa-thumbs-down"></i>
               </div>
@@ -56,7 +56,7 @@
     <div class="overlay-image"></div>
     <img
       class="public-figure-image"
-      [src]="publicFigure.imageUrl"
+      [src]="publicFigure.image"
       alt="Image of the character"
     />
   </article> 
