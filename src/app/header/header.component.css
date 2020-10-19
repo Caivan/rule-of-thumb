@@ -17,7 +17,9 @@
     height: inherit;
 }
 .menu-title {
-    font-size: x-large;
+    color: var(--foreground-default);
+    font-size: 2vw;
+    text-decoration: none;
 }
 .menu-options {
     display: flex;

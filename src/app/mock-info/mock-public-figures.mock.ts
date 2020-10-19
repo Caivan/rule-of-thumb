@@ -7,11 +7,12 @@ export const CHARACTERS: IPublicFigure[] = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus voluptates magni.",
         qtyLikes: 32,
         qtyDislikes: 18,
-        imageUrl: '/assets/images/west-cut.jpg',
+        image: '/assets/images/west-cut.jpg',
         category: 'Entertainment',
         wikiUrl: 'string',
         votingText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nisi quaerat quasi quam modi numquam eius odit praesentium ad? Ab asperiores exercitationem natus dolore! Vitae?',
-        heroImageUrl: ''
+        heroImage: '',
+        endVotingDate: new Date (),
     },
     {
         id: 2,
@@ -20,11 +21,13 @@ export const CHARACTERS: IPublicFigure[] = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus voluptates magni.",
         qtyLikes: 18,
         qtyDislikes: 32,
-        imageUrl: '/assets/images/mark.jpg',
+        image: '/assets/images/mark.jpg',
         category: 'Business',
         wikiUrl: 'string',
-        votingText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut autem quidem quis, possimus ex laudantium, quasi cum deleniti impedit molestias ea nostrum, delectus provident nulla.',
-        heroImageUrl: ''
+        votingText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nisi quaerat quasi quam modi numquam eius odit praesentium ad? Ab asperiores exercitationem natus dolore! Vitae?',
+        heroImage: '',
+        endVotingDate: new Date (),
+        
     },
     {
         id: 3,
@@ -33,12 +36,12 @@ export const CHARACTERS: IPublicFigure[] = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus voluptates magni.",
         qtyLikes: 200,
         qtyDislikes: 400,
-        imageUrl: '/assets/images/kirchner.jpg',
+        image: '/assets/images/kirchner.jpg',
         category: 'Politics',
         wikiUrl: 'string',
         votingText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nisi quaerat quasi quam modi numquam eius odit praesentium ad? Ab asperiores exercitationem natus dolore! Vitae?',
-        heroImageUrl: ''
-
+        heroImage: '',
+        endVotingDate: new Date ()
     },
     {
         id: 4,
@@ -47,10 +50,11 @@ export const CHARACTERS: IPublicFigure[] = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus voluptates magni.",
         qtyLikes: 200,
         qtyDislikes: 130,
-        imageUrl: '/assets/images/malala.jpg',
+        image: '/assets/images/malala.jpg',
         category: 'Activism',
         wikiUrl: 'string',
-        votingText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut autem quidem quis, possimus ex laudantium, quasi cum deleniti impedit molestias ea nostrum, delectus provident nulla.',
-        heroImageUrl: ''
+        votingText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nisi quaerat quasi quam modi numquam eius odit praesentium ad? Ab asperiores exercitationem natus dolore! Vitae?',
+        heroImage: '',
+        endVotingDate: new Date ()
     }
 ];

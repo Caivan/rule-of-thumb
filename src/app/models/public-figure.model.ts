@@ -2,19 +2,22 @@ export interface IPublicFigure {
     id: number;
     name: string;
     publicationDate: Date;
+    endVotingDate: Date; 
     description: string;
     qtyLikes: number;
     qtyDislikes: number;
-    imageUrl: string;
+    image: string;
     category: string;
     wikiUrl: string;
     votingText: string;
-    heroImageUrl: string;
+    heroImage: string;
 }
+/*
 export class PublicFigure implements IPublicFigure {
     id: number;
     name: string;
     publicationDate: Date;
+    endVotingDate: Date; 
     description: string;
     qtyLikes: number;
     qtyDislikes: number;
@@ -23,7 +26,7 @@ export class PublicFigure implements IPublicFigure {
     wikiUrl: string;
     votingText: string;
     heroImageUrl: string;
-    
+
     constructor(
         name: string,
         publicationDate: Date,
@@ -54,3 +57,4 @@ export class PublicFigure implements IPublicFigure {
         return (qtyBase * 100) / (this.qtyLikes + this.qtyDislikes);
     }
 }
+*/
