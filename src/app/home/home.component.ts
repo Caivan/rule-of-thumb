@@ -22,4 +22,7 @@ export class HomeComponent implements OnInit {
   getListOfPublicFigures () {
       this.publicFigures = this.publicFiguresService.getAllPublicFigures ();
   }
+  updateObjectVotes(publicFigureToUpdate: IPublicFigure) {
+      this.publicFiguresService.updatePublicFigureData(publicFigureToUpdate);
+  }
 }

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  urlApiRulesOfThumb: 'https://back-rule-of-thumb.herokuapp.com/public-figure/'
+  urlApiRulesOfThumb: 'https://back-rule-of-thumb.herokuapp.com'
 };
 
 /*

@@ -5,7 +5,7 @@
     </h1>
     <div class="pubfigures-container">
         <div *ngFor="let publicFigure of publicFigures |  async" class="pubfigure-item">
-            <rothumb-public-figure  [publicFigure]="publicFigure" ></rothumb-public-figure>
+            <rothumb-public-figure  [publicFigure]="publicFigure" (updateVotes)="updateObjectVotes(publicFigure)" ></rothumb-public-figure>
         </div>
     </div>
 </div>

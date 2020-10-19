@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { IPublicFigure } from '../models/public-figure.model';
 
 @Component({
@@ -10,12 +10,16 @@ export class PublicFigureComponent implements OnInit {
 
   @Input ()
   publicFigure: IPublicFigure;
+  @Output() 
+  updateVotes: EventEmitter<string>;
+
   likesPercentage: number;
   dislikesPercentage: number;
   voteSelected: string;
   voted: boolean;
 
   constructor() {
+      this.updateVotes  = new EventEmitter<string>();
       this.voteSelected = 'like';
       this.voted = false; 
   }
@@ -36,6 +40,7 @@ export class PublicFigureComponent implements OnInit {
       }
       this.fillPercentages ();
       this.voted = true;
+      this.updateVotes.emit ('updateVotes');
   }
 
   resetVoting () {
