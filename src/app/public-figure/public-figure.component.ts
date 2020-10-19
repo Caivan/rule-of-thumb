@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'rothumb-public-figure',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./public-figure.component.css']
 })
 export class PublicFigureComponent implements OnInit {
+
+  @Input ()
+  publicFigure: any;
 
   constructor() { }
 

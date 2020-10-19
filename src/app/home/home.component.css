@@ -1,0 +1,30 @@
+.items-title {
+    margin: 0;
+    margin-left: 10%;
+}
+.pubfigures-container {
+    display: grid;
+    margin: 5%;
+    margin-top: 0%;
+    grid-template-columns: 50% 50%;
+}
+.pubfigure-item {
+    grid-column: span 1;
+    margin: 10%;
+}
+
+/** Tablet */
+@media screen and (max-width: 768px){ 
+    .pubfigures-container {
+        grid-template-columns: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+    .pubfigures-container {
+        grid-template-columns: 100%;
+    }
+    .pubfigure-item {
+        grid-column: span 1;
+        margin: 2.5% 0% 5% 0%;
+    }
+}

@@ -1,20 +1,10 @@
-.public-figure {
-    width: 100%;
+.trial-box {
+    margin-left: 10%;
+    width: 40%;
     position: relative;
     z-index: 1;
-    height: 500px;
-}
-.public-figure-image {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    z-index: 2;
-    position: absolute;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    height: 80%;
+    padding-top: 10px
 }
 .overlay-image {
     position: absolute; 
@@ -24,19 +14,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgb(28,29,29);
-    background: linear-gradient(0deg, rgba(28,29,29,1) 0%, rgba(83,84,84,0.32816876750700286) 33%, rgba(249,249,249,0) 100%);
-    z-index: 3;
-}
-.public-figure-details {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 4;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    background: black;
+    background-color: rgba(94, 91, 91, 0.7);
+    z-index: -1;
 }
 .detail-container {
     display: inherit;
@@ -59,7 +39,7 @@
     margin: 0%;
     padding: 0%;
 }
-.public-figure-date{
+.public-figure-moreinfo{
     margin: 0px 0px 5% 0px;
     color: var(--foreground-default);
 }
@@ -78,39 +58,10 @@
     justify-content: space-evenly;
     padding: 5px;
 }
-.like-radio {
-    color: white;
-    margin-right: 5px;
-    padding: 5px;
-    background-color: var(--primary-default);
-}
-.dislike-radio {
-    color: white;
-    margin-right: 5px;
-    padding: 5px;
-    background-color: var(--secundary-default);
-    transform: scaleX(-1);
-}
 
-/* HIDE RADIO */
-[type=radio] { 
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-  /* IMAGE STYLES */
-[type=radio] + div {
-    cursor: pointer;
-}
-  /* CHECKED STYLES */
-[type=radio]:checked + div {
-    outline: 2px solid white;
-    color: white;
-}
 .results-bar {
     width: 100%;
-    height: 2em;
+    height: 3em;
     display: flex;
     position: relative;
     color: var(--foreground-default);
@@ -121,26 +72,23 @@
     border: 0px;
     background-color: var(--primary-default);
     height: 100%;
-    width: 64%;
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .dislikes-results-bar {
     border: 0px;
     background-color: var(--secundary-default);
     height: 100%;
-    width: 36%;
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-}
-.bar-vote-results {
-    padding: 5px;
-    opacity: 1;
-}
-.bar-vote-results-dislike i {
+    justify-content: center;
     transform: scaleX(-1);
+}
+.thumb-link {
+    color: var(--foreground-default);
 }
 
 /** Tablet */
@@ -150,15 +98,8 @@
     }
 }
 @media screen and (max-width: 480px){
-    .public-figure {
-        height: 320px;
-    }
-    .like-status {
-        top: 0;
-    }
-}
-@media screen and (max-width: 380px){
-    .public-figure {
-        height: 260px;
+    .trial-box {
+        width: 100%;
+        margin-left: 0;
     }
 }

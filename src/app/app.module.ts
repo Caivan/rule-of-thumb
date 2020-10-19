@@ -11,6 +11,8 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { PublicFigureComponent } from './public-figure/public-figure.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HeaderTrialBoxComponent } from './header-trial-box/header-trial-box.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { PublicFigureComponent } from './public-figure/public-figure.component';
     HowItWorksComponent,
     LoginComponent,
     SignUpComponent,
-    PublicFigureComponent
+    PublicFigureComponent,
+    PageNotFoundComponent,
+    HeaderTrialBoxComponent
   ],
   imports: [
     BrowserModule,
