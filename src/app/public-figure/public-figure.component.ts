@@ -27,7 +27,6 @@ export class PublicFigureComponent implements OnInit {
   ngOnInit(): void {
     if (this.publicFigure) {
       this.fillPercentages();
-      console.log (this.publicFigure);
     }
   }
 

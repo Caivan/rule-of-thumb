@@ -14,14 +14,12 @@ export class PublicFiguresService {
   constructor(private httpClient: HttpClient) {}
 
   getAllPublicFigures(): Observable<IPublicFigure[]> {
-    console.log(environment.urlApiRulesOfThumb);
     return this.httpClient.get<IPublicFigure[]>(
       `${environment.urlApiRulesOfThumb}/${publicFiguresEndPoint}/`
     );
   }
 
   updatePublicFigureData(publicFigure: IPublicFigure) {
-    console.log('hello', publicFigure);
     const updateObject = {
         qtyLikes: publicFigure.qtyLikes,
         qtyDisikes: publicFigure.qtyDislikes,
