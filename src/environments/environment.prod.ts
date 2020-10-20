@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  urlApiRulesOfThumb: 'https://back-rule-of-thumb.herokuapp.com'
 };

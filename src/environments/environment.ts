@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  urlApiRulesOfThumb: 'https://back-rule-of-thumb.herokuapp.com'
+  urlApiRulesOfThumb: 'https://localhost:3000'
 };
 
 /*
