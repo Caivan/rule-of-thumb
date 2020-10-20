@@ -6,6 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ce698e04-2413-47c6-8a36-9afed7372ba6/deploy-status)](https://app.netlify.com/sites/rule-of-thumb/deploys)
 
+The initial load can be slow because is requesting to the API in a free heroku instance that can be sleeping at the moment of the request. After the first request the load time gets faster.
+
 ## Features
 
 - Get a random person from the back end to show in the hero (banner) section every time the user enters to the home page
