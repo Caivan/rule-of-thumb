@@ -8,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   imageSrc: string;
+  isOpen: boolean;
 
   constructor() { 
     // Default image
-    this.imageSrc = '/assets/images/pope-francis.jpg';
+    this.imageSrc = '/assets/images/pope-francis.jpg';  
+    this.isOpen = false;
   }
 
   ngOnInit(): void {
@@ -23,4 +25,7 @@ export class HeaderComponent implements OnInit {
     } 
   }
 
+  openCloseMenu () {
+    this.isOpen = !this.isOpen;
+  }
 }

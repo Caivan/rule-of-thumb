@@ -1,3 +1,4 @@
+<i class="fas fa-bars burger-button" (click)="openCloseMenu ()"></i>
 <header class="header">
     <div class="header-menu">
         <span>
@@ -5,7 +6,7 @@
                 Rule of Thumb.    
             </a>            
         </span>
-        <nav class="menu">
+        <nav [ngClass]="isOpen ? ['menu', 'is-active'] :['menu'] ">
             <ul class="menu-options">
                 <li>
                     <a routerLink="past-trials">Past trials</a>
