@@ -61,3 +61,11 @@ body {
 .secundary {
     background-color: var(--secundary-default);
 }
+.page-title {
+    color: var(--foreground-quaternary);
+    margin: 5% 10% 10% 10%;
+}
+.text-content {
+    color: var(--foreground-secondary);
+    margin: 10%;
+}
